@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>Oh My Porg!</title>
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+  <script src="oh-my-porg.js"></script>
+  <link rel="stylesheet" type="text/css" href="oh-my-porg.css">
+</head>
+
+<body>
+  <h1>Oh My Porg!</h1>
+  <div id="container">
+    <button id="porg-selector-1" type="button" class="porg-selector porg-selector-selected" data-index="1">
+      <span class="button-overlay">Show me the porgs!!!</span>
+      <img src="imgs/porg-1.jpg" alt="Porg 1">
+    </button>
+
+    <button id="porg-selector-2" type="button" class="porg-selector" data-index="2">
+      <span class="button-overlay">Show me the porgs</span>
+      <img src="imgs/porg-2.jpg" alt="Porg 1">
+    </button>
+
+    <button id="porg-selector-3" type="button" class="porg-selector" data-index="3">
+      <span class="button-overlay">Show me the porgs</span>
+      <img src="imgs/porg-3.jpg" alt="Porg 1">
+    </button>
+
+    <button id="porg-selector-4" type="button" class="porg-selector" data-index="4">
+      <span class="button-overlay">Show me the porgs</span>
+      <img src="imgs/porg-4.jpg" alt="Porg 1">
+    </button>
+  </div>
+</body>
+
+</html>

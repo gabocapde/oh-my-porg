@@ -1,0 +1,54 @@
+body {
+  margin: 10px;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 15px;
+  text-align: center;
+}
+
+#container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+}
+
+.porg-selector img{
+    width: 150px;
+    height: 90px;
+}
+
+button {
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0,0,0,.5);
+    transition: opacity .3s ease;
+}
+
+button:hover .button-overlay, .porg-selector-selected .button-overlay{
+    opacity: 1;
+}
+
+.porg-selector-selected .button-overlay{
+    color: rgba(0,0,0,0);
+}

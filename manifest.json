@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Oh my Porg",
+  "description": "This extension allows the user to change the images of the current page for images of porgs.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "imgs/icon.png",
+    "default_popup": "oh-my-porg.html",
+    "default_title": "Oh My Porg!"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  
+  "web_accessible_resources":["imgs/porg-1.jpg","imgs/porg-2.jpg","imgs/porg-3.jpg","imgs/porg-4.jpg"]
+  
+}
